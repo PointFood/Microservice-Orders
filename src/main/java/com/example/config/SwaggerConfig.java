@@ -29,8 +29,8 @@ public class SwaggerConfig {
     public ApiInfo apiInfo() {
 
         return new ApiInfoBuilder()
-                .title("API PointFood")
-                .description("PointFood - API con Spring Boot")
+                .title("Orders")
+                .description("Orders Microservice")
                 .version("1.0")
                 .contact(new Contact("PointFood Corp.", "https://github.com/PointFood", ""))
                 .build();
