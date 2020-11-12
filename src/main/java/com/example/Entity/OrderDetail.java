@@ -10,6 +10,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Data
@@ -31,13 +32,11 @@ public class OrderDetail {
 
     @Column(name = "dish_id")
     private Long dishId;
-
     @Transient
     private Dish dish;
 
     @Column(name = "extra_id")
     private Long extraId;
-
     @Transient
     private Extra extras;
 

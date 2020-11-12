@@ -29,7 +29,7 @@ public class SwaggerConfig {
     public ApiInfo apiInfo() {
 
         return new ApiInfoBuilder()
-                .title("Orders")
+                .title("Point Food")
                 .description("Orders Microservice")
                 .version("1.0")
                 .contact(new Contact("PointFood Corp.", "https://github.com/PointFood", ""))

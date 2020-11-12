@@ -28,7 +28,6 @@ public class Order {
 
     @Column(name = "cliente_id")
     private Long clientId;
-
     @Transient
     private Client client;
 
@@ -50,4 +49,9 @@ public class Order {
 
     @Column(name = "total", precision = 6, scale =  2, nullable = false)
     private double total;
+
+    @JoinColumn(name="status_id", nullable = false)
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+    private Status status;
 }

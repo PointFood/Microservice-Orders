@@ -1,0 +1,18 @@
+server:
+  port: 9000
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: admin
+    url: jdbc:postgresql://localhost:5432/Orders
+
+  jpa:
+    hibernate:
+      ddl-auto: update

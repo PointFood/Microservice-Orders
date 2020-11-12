@@ -8,5 +8,5 @@ public class Restaurant {
     private String name;
     private String address;
     private String phone;
-    private Owner owner;
+    private Manager manager;
 }
